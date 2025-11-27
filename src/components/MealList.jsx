@@ -1,7 +1,7 @@
 import { Card, Button, Container, Row, Col, Badge } from "react-bootstrap";
-import { FaEye, FaTrash, FaMapMarkerAlt, FaUtensils } from "react-icons/fa";
+import { FaEye, FaTrash, FaMapMarkerAlt, FaUtensils, FaExternalLinkAlt } from "react-icons/fa";
 
-function MealList({ meals, onMealClick, onDeleteMeal }) {
+function MealList({ meals, onMealClick, onViewDetails, onDeleteMeal }) {
     return (
         <Container>
             <Row xs={1} md={2} lg={3} className="g-4">
@@ -35,18 +35,25 @@ function MealList({ meals, onMealClick, onDeleteMeal }) {
                                 </div>
                                 <div className="d-flex gap-2 mt-auto">
                                     <Button
-                                        variant="primary"
+                                        variant="outline-primary"
                                         onClick={() => onMealClick(meal)}
                                         className="flex-grow-1"
+                                        size="sm"
                                     >
                                         <FaEye className="me-2" />
-                                        View Details
+                                        Quick View
+                                    </Button>
+                                    <Button
+                                        variant="primary"
+                                        onClick={() => onViewDetails(meal)}
+                                        size="sm"
+                                    >
+                                        <FaExternalLinkAlt />
                                     </Button>
                                     <Button
                                         variant="danger"
-                                        onClick={() =>
-                                            onDeleteMeal(meal.idMeal)
-                                        }
+                                        onClick={() => onDeleteMeal(meal.idMeal)}
+                                        size="sm"
                                     >
                                         <FaTrash />
                                     </Button>

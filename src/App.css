@@ -50,7 +50,6 @@ body {
 }
 
 .card-body {
-    background: #1a1f35;
     padding: 1.25rem;
 }
 
@@ -116,6 +115,32 @@ body {
 
 .btn-secondary:hover {
     opacity: 0.9;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border: 2px solid #667eea;
+    color: #667eea;
+    box-shadow: none;
+}
+
+.btn-outline-primary:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.btn-outline-secondary {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+}
+
+.btn-outline-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
 }
 
 /* Search Bar */
@@ -321,3 +346,184 @@ a:hover {
     color: #1557b0;
     text-decoration: underline;
 }
+
+/* Filter Card Styles */
+.filter-card {
+    background: #1a1f35 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+}
+
+.filter-card .card-body {
+    padding: 1.5rem;
+}
+
+.filter-title {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.found-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+.reset-btn {
+    background: #2d3748 !important;
+    border: none !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: #3d4758 !important;
+    transform: translateY(-2px);
+}
+
+.input-group-icon {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-right: none !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Multiple Select Styles */
+.multi-select {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 0.5rem !important;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    min-height: 180px !important;
+}
+
+.multi-select:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(102, 126, 234, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+    outline: none;
+}
+
+.multi-select option {
+    background: #1a1f35;
+    color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin: 0.25rem 0;
+    transition: all 0.2s ease;
+}
+
+.multi-select option:hover {
+    background: rgba(102, 126, 234, 0.3);
+}
+
+.multi-select option:checked {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Meal Details Card */
+.meal-details-card {
+    background: #1a1f35 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
+.meal-details-card .card-body {
+    padding: 2rem;
+}
+
+.meal-detail-title {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.ingredients-section,
+.instructions-section {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ingredients-list {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.ingredient-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.ingredient-badge {
+    background: rgba(102, 126, 234, 0.2) !important;
+    border: 1px solid #667eea !important;
+    color: #667eea !important;
+    padding: 0.35rem 0.75rem;
+    font-weight: 500;
+    min-width: 80px;
+    text-align: center;
+}
+
+.ingredient-name {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
+.instructions-text {
+    color: rgba(255, 255, 255, 0.85) !important;
+    line-height: 1.8;
+    white-space: pre-line;
+    font-size: 0.95rem;
+}
+
+.youtube-btn {
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%) !important;
+    border: none;
+    box-shadow: 0 4px 12px rgba(235, 51, 73, 0.4);
+}
+
+.youtube-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Meal Form Card */
+.meal-form-card {
+    background: #1a1f35 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+}
+
+.meal-form-card .card-body {
+    padding: 2rem;
+}
+
+.meal-form-card h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+}
+
